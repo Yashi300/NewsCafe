@@ -5,7 +5,7 @@ var cors = require('cors');
 connectToMongo();
 
 const app = express()
-const port =process.env.PORT || 5000;
+const port =5000;
 
 app.use(cors());
 //agar req.body ko use karna hai to is middleware ko lagana padega.

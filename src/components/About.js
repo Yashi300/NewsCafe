@@ -3,7 +3,7 @@ import React from 'react';
 export const About = () => {
  
   return (
-    <div >
+    <div className='top' >
        <div className="boxup">
         <h2 >Your notes anywhere</h2>
         <p>NoteCafe is the fastest way to pull up an online notebook quickly to store, view, edit and delete your notes online easily. You can now handle your notes anytime and anywhere. Convenience at your doorstep or rather just one click away. With NoteCafe you can access your important notes, to-do-list and everything else you decide to store here with minimal effort.</p>

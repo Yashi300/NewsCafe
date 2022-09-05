@@ -173,6 +173,9 @@ i{
   padding-top: 220px;
   padding-bottom: 40px;
 }
+.boxup p {
+  font-size: 13px;
+}
 }
 .boxup{
     height: 300px;
@@ -185,9 +188,9 @@ i{
 .boxup h2{
   font-family: cursive;
   text-align: center;
-  padding:23px;
+  padding:14px;
 }
 .boxup p{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  padding:32px;
+  padding:14px;
 }
