@@ -13,7 +13,7 @@ const handleSubmit =async (e)=>{
    setCredentials({name:"", email:"", password:"", cpassword:""});
    alert("Password and confirm password must be the same");
 } else {
-  const response = await fetch(`http://localhost:5000/api/auth/createuser`, {
+  const response = await fetch(`https://newscafebackend.herokuapp.com/api/auth/createuser`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NoteContext from "./noteContext";
 
 const NoteState = (props) =>{
-  const host="http://localhost:5000"
+  const host="https://newscafebackend.herokuapp.com/"
   const notesInitial =[]
   const userInitial =[]
   const [notes, setNotes] = useState(notesInitial)
@@ -12,7 +12,7 @@ const NoteState = (props) =>{
   const getUser =async ()=>{
     console.log("getting user");
     //API Call
-    const response = await fetch(`${host}/api/auth/getuser`, {
+    const response = await fetch(`https://newscafebackend.herokuapp.com/api/auth/getuser`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const NoteState = (props) =>{
   const getNotes =async ()=>{
     console.log("getting notes");
     //API Call
-    const response = await fetch(`${host}/api/notes/fetchallnotes`, {
+    const response = await fetch(`https://newscafebackend.herokuapp.com/api/notes/fetchallnotes`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ const NoteState = (props) =>{
   const addNote = async (title, description, tag) => {
     // TODO: API Call
     // API Call 
-    const response = await fetch(`${host}/api/notes/addnote`, {
+    const response = await fetch(`https://newscafebackend.herokuapp.com/api/notes/addnote`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const NoteState = (props) =>{
   //DELETE A NOTE
   const deleteNote =async (id)=>{
      //API call
-     const response = await fetch(`${host}/api/notes/deletenote/${id}`, {
+     const response = await fetch(`https://newscafebackend.herokuapp.com/api/notes/deletenote/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ const NoteState = (props) =>{
   //EDIT A NOTE
   const editNote = async (id, title, description, tag) => {
     // API Call 
-    const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
+    const response = await fetch(`https://newscafebackend.herokuapp.com/api/notes/updatenote/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
